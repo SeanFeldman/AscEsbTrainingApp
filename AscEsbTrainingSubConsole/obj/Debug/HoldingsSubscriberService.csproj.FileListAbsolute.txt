@@ -1,0 +1,15 @@
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\HoldingsSubscriberService.dll.config
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\HoldingsSubscriberService.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\HoldingsSubscriberService.pdb
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\HoldingsMessages.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\log4net.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.Core.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.Host.exe
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\HoldingsMessages.pdb
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.xml
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.Core.xml
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\bin\Debug\NServiceBus.Host.xml
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\obj\Debug\HoldingsSubscriberService.csprojResolveAssemblyReference.cache
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\obj\Debug\HoldingsSubscriberService.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsSubscriberService\obj\Debug\HoldingsSubscriberService.pdb

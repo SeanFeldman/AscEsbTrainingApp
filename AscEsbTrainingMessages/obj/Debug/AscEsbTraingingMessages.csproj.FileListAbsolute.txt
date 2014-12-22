@@ -1,0 +1,4 @@
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsMessages\bin\Debug\AscEsbTrainingMessages.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsMessages\bin\Debug\AscEsbTrainingMessages.pdb
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsMessages\obj\Debug\AscEsbTrainingMessages.dll
+D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTraingingApp\HoldingsMessages\obj\Debug\AscEsbTrainingMessages.pdb

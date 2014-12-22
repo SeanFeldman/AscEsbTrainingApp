@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE0E1B41-23A2-46D9-BB70-28CD696E405F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AscEsbTrainingPubConsole</RootNamespace>
+    <AssemblyName>AscEsbTrainingPubConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\3.3.1\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.ObjectBuilder.Spring">
+      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\containers\spring\NServiceBus.ObjectBuilder.Spring.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndpointConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerEndpoint.cs" />
+    <Compile Include="SubscriptionAuthorizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AscEsbTrainingMessages\AscEsbTrainingMessages.csproj">
+      <Project>{451e2a6e-ca72-4260-a6a2-dccf7fc9a81b}</Project>
+      <Name>AscEsbTrainingMessages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NServiceBus.Host.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>del /Q "$(TargetDir)License"
+xcopy "$(ProjectDir)..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\License\License.xml" "$(TargetDir)License\"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
