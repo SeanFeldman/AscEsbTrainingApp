@@ -5,9 +5,9 @@ using NServiceBus;
 
 namespace AscEsbTrainingSubConsole
 {
-    public class EventMessageHandler : IHandleMessages<IMyEvent>
+    public class EventMessageHandler : IHandleMessages<EventMessageConsole>, IHandleMessages<EventMessageUI>
     {
-        public void Handle(IMyEvent message)
+        void GeneralHandle(IMyEvent message)
         {
             // Display
             Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -29,6 +29,16 @@ namespace AscEsbTrainingSubConsole
                 Console.Write(".");
             }
             Console.WriteLine("   Done!");
+        }
+
+        public void Handle(EventMessageConsole message)
+        {
+            GeneralHandle(message);
+        }
+
+        public void Handle(EventMessageUI message)
+        {
+            GeneralHandle(message);
         }
     }
 }

@@ -4,6 +4,6 @@
     <StartArguments>
     </StartArguments>
     <StartAction>Program</StartAction>
-    <StartProgram>D:\ASC Team Project\Prototypes And Test Code\Enterprise Architecture\AscEsbTrainingApp\AscEsbTrainingSubConsole\bin\Debug\NServiceBus.Host.exe</StartProgram>
+    <StartProgram>C:\GitHub\SeanFeldman\AscEsbTrainingApp\AscEsbTrainingSubConsole\bin\Debug\NServiceBus.Host.exe</StartProgram>
   </PropertyGroup>
 </Project>

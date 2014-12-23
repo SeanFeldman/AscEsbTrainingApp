@@ -75,7 +75,7 @@ namespace AscEsbTrainingPubUI
             // Publish
             try
             {
-                var eventMessage = Bus.CreateInstance<IMyEvent>();// : new EventMessage();
+                var eventMessage = Bus.CreateInstance<EventMessageUI>();// : new EventMessage();
                 eventMessage.EventId = Guid.NewGuid();
                 eventMessage.Time = DateTime.Now.Second > 30 ? (DateTime?)DateTime.Now : null;
                 eventMessage.Duration = TimeSpan.FromSeconds(99999D);
