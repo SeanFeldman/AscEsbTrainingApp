@@ -37,10 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NServiceBus">
-      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\NServiceBus.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.Interfaces.4.7.5\lib\net40\NServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="NServiceBus.Core">
-      <HintPath>..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\NServiceBus.Core.dll</HintPath>
+      <HintPath>..\packages\NServiceBus.4.7.5\lib\net40\NServiceBus.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -70,6 +70,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,8 +95,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>del /Q "$(TargetDir)License"
-xcopy "$(ProjectDir)..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\License\License.xml" "$(TargetDir)License\"
+    <PostBuildEvent>REM del /Q "$(TargetDir)License"
+REM xcopy "$(ProjectDir)..\..\..\..\ASC.SharedAssemblies\ThirdParty\NServiceBus\4.0.0\License\License.xml" "$(TargetDir)License\"
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
